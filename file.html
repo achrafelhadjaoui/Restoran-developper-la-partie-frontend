@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Header Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header with logo and navigation bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-5">
+      <a class="navbar-brand" href="#">
+        <img src="https://via.placeholder.com/50" alt="Logo" style="width: 50px; height: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Subscription Section -->
+  <section class="d-flex justify-content-around align-items-center p-5 flex-column flex-md-row">
+    <div class="text-center">
+        <h2>Subscribe</h2>
+        <p>Get recipes worth repeating and more from our chefs, straight to your inbox.</p>
+    </div>
+    <form class="form-inline">
+        <div class="form-group mb-2">
+          <label for="Name" class="sr-only">Name</label>
+          <input type="text" class="form-control" id="Name" placeholder="Name">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+      </form>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="mx-5">
+    <div class="text-center my-3">
+        <h2>Title</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-3">
+        <div class="card" style="border: 1px solid #e0e0e0; border-radius: 10px;">
+            <img src="https://via.placeholder.com/300x200?text=Dish+6" class="card-img-top" alt="Dish 6" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            <div class="card-body" style="background-color: #f8f9fa;">
+                <h5 class="card-category" style="font-size: 0.9rem; font-weight: bold; text-transform: uppercase; color: #6c757d;">Category 6</h5>
+                <h5 class="card-title" style="color: #343a40;">Dish Name 6</h5>
+                <p class="card-text" style="color: #6c757d;">A brief description of Dish 6.</p>
+            </div>
+          </div>
+      </div>
+      <!-- Repeat similar blocks for other cards -->
+    </div>
+  </section>
+
+  <!-- Restaurant Info Section -->
+  <section class="d-flex justify-content-around align-items-center p-5 flex-column flex-md-row">
+    <div>
+        <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" class="rounded-circle" alt="Cinque Terre" style="max-width: 400px; height: 400px; object-fit: cover;">
+    </div>
+    <div class="text-center text-md-left">
+        <h1>The Name of the Restaurant</h1>
+        <p>Une petite description</p>
+        <button class="btn btn-primary">Learn more</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-light py-3 py-md-5 border-top border-light-subtle">
+    <div class="container overflow-hidden">
+      <div class="row gy-3 gy-md-5 align-items-center">
+        <div class="col-xs-12 col-sm-6 col-xl-3 text-center text-sm-start">
+          <a href="#!">
+            <img src="https://via.placeholder.com/175x57" alt="BootstrapBrain Logo" width="175" height="57">
+          </a>
+        </div>
+        <div class="col-xs-12 col-xl-6 text-center">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link link-secondary px-2 px-md-3" href="#!">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-secondary px-2 px-md-3" href="#!">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-secondary px-2 px-md-3" href="#!">Advertise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-secondary px-2 px-md-3" href="#!">Terms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-secondary px-2 px-md-3" href="#!">Privacy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-xl-3 text-center text-sm-end">
+          <ul class="list-unstyled d-flex justify-content-center justify-content-sm-end">
+            <li class="me-3">
+              <a href="#!" class="link-dark link-opacity-75-hover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="#!" class="link-dark link-opacity-75-hover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.22-.105-2.467-.192a2.007 2.007 0 0 1-1.415-1.42c-.313-1.161-.334-5.57-.335-6.18v-.162c0-.311.007-1.589.053-2.928l.006-.171.004-.087.006-.17.007-.171C1.94 2.943 2.03 2.225 2.12 2.01a2.008 2.008 0 0 1 1.415-1.42c1.15-.312 5.557-.334 6.178-.335h.087ZM6.523 10.805l3.691-2.166-3.691-2.167v4.333Z" />
+                </svg>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="#!" class="link-dark link-opacity-75-hover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.008-.423A6.683 6.683 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.292 3.292 0 0 0 1.447-1.816 6.573 6.573 0 0 1-2.084.793 3.286 3.286 0 0 0-5.594 2.994A9.325 9.325 0 0 1 1.114 2.1a3.286 3.286 0 0 0 1.017 4.382 3.323 3.323 0 0 1-1.487-.41v.041c0 1.577 1.124 2.892 2.621 3.188a3.203 3.203 0 0 1-1.482.056 3.285 3.285 0 0 0 3.067 2.28A6.588 6.588 0 0 1 .78 13.58 9.29 9.29 0 0 0 5.026 15z" />
+                </svg>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="#!" class="link-dark link-opacity-75-hover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0c1.978 0 2.223.007 3.005.043.78.036 1.312.148 1.777.319a3.545 3.545 0 0 1 1.272.832 3.548 3.548 0 0 1 .832 1.272c.171.465.283.997.319 1.777.036.782.043 1.027.043 3.005s-.007 2.223-.043 3.005c-.036.78-.148 1.312-.319 1.777a3.548 3.548 0 0 1-.832 1.272 3.548 3.548 0 0 1-1.272.832c-.465.171-.997.283-1.777.319-.782.036-1.027.043-3.005.043s-2.223-.007-3.005-.043c-.78-.036-1.312-.148-1.777-.319a3.545 3.545 0 0 1-1.272-.832 3.545 3.545 0 0 1-.832-1.272c-.171-.465-.283-.997-.319-1.777C.007 10.223 0 9.978 0 8s.007-2.223.043-3.005c.036-.78.148-1.312.319-1.777a3.545 3.545 0 0 1 .832-1.272 3.545 3.545 0 0 1 1.272-.832c.465-.171.997-.283 1.777-.319C5.777.007 6.022 0 8 0zm0 1.44c-1.957 0-2.19.007-2.96.043-.708.033-1.092.152-1.347.253-.34.132-.583.29-.838.544-.254.254-.412.498-.544.838-.101.255-.22.639-.253 1.347-.036.77-.043 1.003-.043 2.96s.007 2.19.043 2.96c.033.708.152 1.092.253 1.347.132.34.29.583.544.838.254.254.498.412.838.544.255.101.639.22 1.347.253.77.036 1.003.043 2.96.043s2.19-.007 2.96-.043c.708-.033 1.092-.152 1.347-.253.34-.132.583-.29.838-.544.254-.254.412-.498.544-.838.101-.255.22-.639.253-1.347.036-.77.043-1.003.043-2.96s-.007-2.19-.043-2.96c-.033-.708-.152-1.092-.253-1.347-.132-.34-.29-.583-.544-.838-.254-.254-.498-.412-.838-.544-.255-.101-.639-.22-1.347-.253-.77-.036-1.003-.043-2.96-.043zm0 2.587a4.973 4.973 0 1 0 0 9.946 4.973 4.973 0 0 0 0-9.946zm0 1.44a3.532 3.532 0 1 1 0 7.064 3.532 3.532 0 0 1 0-7.064zm5.461-.26a1.165 1.165 0 1 1-2.33 0 1.165 1.165 0 0 1 2.33 0z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
