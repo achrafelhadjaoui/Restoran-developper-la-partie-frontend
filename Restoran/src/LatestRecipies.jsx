@@ -9,7 +9,7 @@ const LatestRecipies = () => {
     <section className="mx-5">
       
           <div className="text-center my-3">
-            <h2>Title</h2>
+            <h2>Latest</h2>
           </div>
           
           <div className="row">

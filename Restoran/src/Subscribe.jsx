@@ -1,6 +1,6 @@
 const SubscribeSection = () => {
     return (
-        <section className="d-flex justify-content-around align-items-center p-5 flex-column flex-md-row">
+        <section className="d-flex justify-content-around align-items-center p-5 flex-column flex-md-row bg-light">
         <div className="text-center">
           <h2>Subscribe</h2>
           <p>Get recipes worth repeating and more from our chefs, straight to your inbox.</p>

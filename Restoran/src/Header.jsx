@@ -126,7 +126,7 @@ const Navbar = () => {
 
     return (
         <header>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light mx-5 d-flex justify-content-between">
+            <nav className="navbar navbar-expand-lg navbar-light  mx-5 d-flex justify-content-between">
                 <a className="navbar-brand" href="#">
                     <img src="https://via.placeholder.com/50" alt="Logo" style={{ width: '50px', height: '50px' }} />
                 </a>
