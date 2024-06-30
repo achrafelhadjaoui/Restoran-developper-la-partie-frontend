@@ -34,7 +34,7 @@ const App = () => {
 
   return(
     <>
-        {console.log(selectedArticle)}
+      {console.log(selectedArticle)}
       <theContext.Provider value={{currentState,setCurrent, data, selectedArticle, setSelectedArticle}}>
         {currentState === "Home" && <Home />}
         {currentState === "About" && <AboutSection/>}

@@ -17,7 +17,7 @@ const LatestRecipies = () => {
             <div className="col-md-3 col-sm-6 mb-3" key={index} onClick={()=>{context.setCurrent("Article"), context.setSelectedArticle(e)}}>
               <div className="card" style={{ border: '1px solid #e0e0e0', borderRadius: '10px' }}>
                 <img 
-                  src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" 
+                  src={e.Image} 
                   className="card-img-top" 
                   alt="Dish 6" 
                   style={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }} 
