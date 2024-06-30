@@ -9,6 +9,7 @@ import RestaurantSection from './RetoranSection';
 import Ajouter from './Ajouter';
 import AboutSection from './About';
 import Home from './Home';
+import ArticleSection from './ArticleSection';
 
 export const theContext = createContext()
 
@@ -16,6 +17,7 @@ const App = () => {
 
   let [currentState, setCurrent] = useState("Home")
   let [data, setData] = useState([])
+  let [selectedArticle, setSelectedArticle]= useState("")
 
   useEffect(() => {
     // Fetch initial data here
@@ -32,11 +34,12 @@ const App = () => {
 
   return(
     <>
-
-      <theContext.Provider value={{currentState,setCurrent, data}}>
+        {console.log(selectedArticle)}
+      <theContext.Provider value={{currentState,setCurrent, data, selectedArticle, setSelectedArticle}}>
         {currentState === "Home" && <Home />}
         {currentState === "About" && <AboutSection/>}
         {currentState === "Ajouter" && <Ajouter/>}
+        {currentState === "Article" && <ArticleSection/>}
       </theContext.Provider>
 
      
