@@ -84,8 +84,8 @@ const Footer = () => {
           <div className="col-xs-12 col-sm-6 col-xl-3 text-center text-sm-start">
             <a href="#!">
               <img
-                src="https://via.placeholder.com/175x57"
-                alt="BootstrapBrain Logo"
+                src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+                alt="Restoran Logo"
                 width="175"
                 height="57"
               />

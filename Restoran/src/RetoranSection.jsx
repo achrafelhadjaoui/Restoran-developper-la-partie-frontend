@@ -1,4 +1,9 @@
+import { theContext } from "./App";
+import React, { useContext } from 'react';
+
 const RestaurantSection = () => {
+
+  let context = useContext(theContext);
     return (
       <section className="d-flex justify-content-around align-items-center p-5 flex-column flex-md-row bg-light">
       <div>
@@ -7,7 +12,7 @@ const RestaurantSection = () => {
       <div className="text-center text-md-left">
         <h1>The Name of the Restaurant</h1>
         <p>Une petite description</p>
-        <button className="btn btn-primary">Learn more</button>
+        <button className="btn btn-primary" onClick={() => context.setCurrent("About")}>Learn more</button>
       </div>
     </section>
     );

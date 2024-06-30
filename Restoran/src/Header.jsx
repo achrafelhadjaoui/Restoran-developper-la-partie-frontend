@@ -128,7 +128,7 @@ const Navbar = () => {
         <header>
             <nav className="navbar navbar-expand-lg navbar-light  mx-5 d-flex justify-content-between">
                 <a className="navbar-brand" href="#">
-                    <img src="https://via.placeholder.com/50" alt="Logo" style={{ width: '50px', height: '50px' }} />
+                    <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="Logo" style={{ width: '100px', height: '50px' }} />
                 </a>
                 <div >
                     <ul className="navbar-nav ms-auto">
@@ -139,7 +139,7 @@ const Navbar = () => {
                             <a className="nav-link" href="#" onClick={() => context.setCurrent("About")}>About</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#" onClick={() => context.setCurrent("Recipes")}>Recipes</a>
+                            <a className="nav-link" href="#">Recipes</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#" onClick={() => context.setCurrent("Ajouter")}>Ajouter</a>

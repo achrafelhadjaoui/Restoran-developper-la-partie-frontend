@@ -462,7 +462,7 @@ const Ajouter = () => {
         <div className="text-center mt-5">
           <h1>Ajouter Form</h1>
         </div>
-        <div className="row">
+        <div className="row my-4">
           <div className="col-lg-7 mx-auto">
             <div className="card mt-2 mx-auto p-4 bg-light">
               <div className="card-body bg-light">
